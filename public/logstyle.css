@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+body{
+    display:flex;
+    height: 500px;
+    width: 98%;
+    background: url('/pic/bg1.jpg') center center;
+    background-size: cover;
+}
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 340px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+    margin-left: 130px;
+    height: 40px;
+    width: 100px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #10deaa;
+    border:2px solid #10deaa;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    /* border: none; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+
+}
+
+.login-container button:hover {
+  background-color: #0DFF8C;  
+    color: Black;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 5px 40px -10px rgb(219, 219, 219);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(223, 223, 223);
+    transition: all 0.4s ease 0s;
+ 
+
+}
+
+#message {
+  margin-top: 15px;
+  color: red;
+}
+/* header section: logo  */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    height: 100px;
+}
+#logo img{
+    display: block;
+    height: 64px;
+    top: -18px;
+    position: relative;
+}
+#logo h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color:#ec0f6b;
+}
+.logocustom{
+    margin: 5px;
+}

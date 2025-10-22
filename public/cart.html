@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart | Bite E Bakers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="navigation">
+        <ul>
+            <li class="list"><a href="/home.html">Home</a></li>
+            <li class="list"><a href="/menu.html">Store</a></li>
+            <!-- <li class="list"><a href="#gallary">Gallery</a></li> -->
+            <li class="list"><a href="/services.html">Services</a></li>
+            <li class="list"><a href="/about.html">About us</a></li>
+            <li class="list"><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div id="cart" class="custom">
+            <a href="/cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </div>
+    </nav>
+
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h2 id="shopheading">Your Cart</h2>
+    
+    <div id="box2" class="boxcustom12">
+              <div class="subheading" id="cart-items">
+      <!-- Cart items will appear here -->
+    </div>
+    <div class="cart-total">
+      <p class="subheading">Total: Rs <span id="total-price">0</span></p>
+      <button class="example_c" onclick="clearCart()">Clear Cart</button>
+    </div>
+    <div>
+      <button class="example_c" onclick="goToCheckout()">Checkouts</button>
+    </div> 
+            </div>
+
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

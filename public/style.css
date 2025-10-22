@@ -1,0 +1,812 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe5b4;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b2e2e;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4b2e2e;
+  font-weight: 500;
+}
+
+.contact-info a {
+  margin-left: 15px;
+  color: #4b2e2e;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.cart-icon span {
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Gallery Section */
+.gallery-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff8f0;
+}
+
+.slider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Product Menu */
+.menu-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #f5e6b8;
+}
+/* default section */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* header section */
+#headtop{
+    display: flex;
+}
+
+/* header section: address */
+#address{
+    display: flex;
+    margin: 34px;
+    padding: 4px;
+}
+#address img{
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+#address p{
+    font-family: 'EB Garamond', serif;
+    color: gray;
+}
+
+
+/* header section: logo  */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 161px;
+}
+#logo img{
+    display: block;
+    height: 64px;
+    top: -18px;
+    position: relative;
+}
+#logo h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color:#ec0f6b;
+}
+.logocustom{
+    margin: 5px;
+}
+
+/* header section : info  */
+#info{
+
+}
+.contact_btn{
+  font-size: 35px;
+    margin-left: 225px;
+    margin-top: 40px;
+    height: 55px;
+    width: 220px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    border:2px solid #ec0f6b;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    /* border: none; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+        
+    }
+    .contact_btn:hover {
+        background-color: #0DFF8C;                  /*here we use invert value to make black image white*/
+        border: #0DFF8C;                            /*here we use invert value to make black image white*/
+        text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+        -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+        transition: all 0.4s ease 0s;
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        }
+.button img{
+    height: 34px;
+    margin-right: 12px;
+    /* box-shadow:0px 0px 6px white; */
+}
+
+
+/* Navigation Bar Section */
+
+/* Navigation Bar Section: Menue/List */
+#navigation{
+    display: flex;
+    height: 60px;
+    
+    top: 0px;
+    background-color: white;
+}
+#navigation ul{
+    display: flex;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.list{
+    margin-left: 57px;
+    padding: 2px;
+    list-style: none;
+}
+.list a{
+    text-decoration: none;
+    color: #000000e6;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.list a:hover{
+    
+    /* text-decoration: overline solid #ec0f6b; */
+    color: #ec0f6b;
+    text-decoration-thickness: 10px;
+}
+.list a:active{
+    text-decoration: overline solid #f81717;
+    
+}
+
+/*Navigation section: Cart and Search */
+#search img{
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 375px;
+}
+
+#search img:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+ #cart img{
+    height: 40px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+                    
+ #cart img:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Home Sction of Website */
+#home{
+    display:flex;
+    height: 700px;
+    width: 100%;
+    background: url('/pic/bg1.jpg') center center;
+    background-size: cover;
+}
+#home h1{
+    font-family: 'Great Vibes', cursive;
+    color: #ffffff;
+    margin-left: 66px;
+    margin-top: 90px;
+    font-size: 7rem;
+}
+#home img{
+    transform: rotate(0deg);
+    height: 3px;
+    width: 70px;
+    margin-top: 255px;
+    margin-left: -338px;
+}
+#home h2{
+    margin-top: 230px;
+    margin-left: 21px;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#home p{
+    margin-top: 300px;
+    margin-left: -470px;
+    color:#fffdd0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.8rem;
+}
+/* Home Sction:Button */
+#shopbtn{
+    margin-left: -389px;
+    margin-top: 420px;
+    height: 55px;
+    width: 220px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #10deaa;
+    border:2px solid #10deaa;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    /* border: none; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+}
+#shopbtn:hover{
+    background-color: #0DFF8C;                
+    border: #0DFF8C;   
+    color: white;                         
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 5px 40px -10px rgb(219, 219, 219);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(223, 223, 223);
+    transition: all 0.4s ease 0s;
+   
+}
+
+
+/* Section Gallary */
+/* main background gallary settings */
+
+#gallary{
+    height: 850px;
+    width: 100%;
+    background: url('/pic/background/4.jpg') center center;
+    background-size: cover;
+    border: 10px solid white;
+}
+#gallary h3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Gallary: Cards Envelop */
+
+#cards{                 
+    display: flex;
+    flex-wrap: wrap;
+    margin: -35px 0px 0px 2px;
+}
+
+.boxcustom{
+    
+    border: 2px solid #750b0b;
+    height: 400px;
+    width: 350px;
+    display: block;
+    margin:50px 32px 54px 32px;
+    cursor: pointer;
+    position: inherit;
+}
+.boxcustom:hover{
+    box-shadow: 5px 5px 35px #750b0b;
+    background-color: white;
+    transition: all 0.1s ease 0s;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cards img{
+   
+    height: 230px;
+    border: 10px solid white;
+}
+#box2 img{
+    
+    height: 230px;
+    width: 330px;
+}
+#cards h2{
+    margin: 30px 0px 0px 75px;
+}
+#cards p{
+    font-size: 1.1rem;
+    padding: 17px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* Read More Button */
+#cards a{
+    display: block;    
+}
+.readmore{
+    color: #ec0f6b;
+    font-size: 1.2rem;
+    margin: 8px 0px 0px 130px;
+    padding: 0px 0px 0px 5px;
+}
+#cards a:hover{
+    border: 2px solid #750b0b;
+    height: 30px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: #750b0b;
+    transition: all 0.2s ease-in-out;
+}
+
+#order{
+    margin-left: 19px;
+    margin-top: -21px;
+    height: 55px;
+    width: 220px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0DFF8C;
+    border:2px solid #0DFF8C;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    /* border: none; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+}
+#order:hover{
+    background-color: #0DFF8C;                
+    border: #0DFF8C;   
+    color: white;                         
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 5px 40px -10px rgb(6, 218, 6);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(40, 211, 17);
+    transition: all 0.4s ease 0s;
+   
+}
+
+/* SHOPING SECTION */
+
+#shop{
+    height: 550px;
+    width: 100%;
+    background-color: white;
+    background: url('/pic/whychoose/cherry.jpg') center center no-repeat;
+    background-size: contain;
+}
+#shopheading{
+    display: block;
+    margin: 10px 428px;
+    font-size: 3rem;
+    font-family: 'Monda', sans-serif;
+    text-transform: uppercase;
+    color: #750b0b;
+    transition: all 0.2s ease-in-out;
+}
+
+/* SHOPING SECTION: Shopping car Container */
+#ShopContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:  0px 0px 0px 0px;
+    transition: all 0.2s ease-in-out;
+    
+}
+/*SHOPING SECTION: 4 boxes section */
+
+.shopingbox{
+    /* border: 2px solid red; */
+    margin: 2px 2px;
+    height: 245px;
+    width: 666px;
+    /* display: flex;
+    justify-content: center; */
+
+}
+#boxheading1{
+    margin: 30px 0px 0px 131px;
+    padding: 2px 2px;
+    display: block;
+    
+}
+#boxheading3{
+    margin: 30px 0px 0px 131px;
+    padding: 2px 2px;
+    display: block;
+    
+}
+#boxheading2{
+    margin: 30px 0px 0px 320px;
+    padding: 2px 2px;
+    display: block;
+    
+}
+#boxheading4{
+    margin: 30px 0px 0px 320px;
+    padding: 2px 2px;
+    display: block;
+    
+}
+
+.ShopImg1{
+    height: 76px;
+    display: block;
+    /* position: inherit; */
+    margin: 30px 402px;
+    transition: all 0.2s ease-in-out;
+}
+.ShopImg1:hover{
+   transform: rotate(10deg);
+}
+.Shoptext1{
+    margin: -111px 288px 0px 0px;
+    padding: 2px 2px;
+    display: block;
+    text-align: end;
+    color: gray;
+    font-size: 1.5rem;
+    
+}
+.ShopImg2{
+    height: 76px;
+    display: block;
+    /* position: inherit; */
+    margin: 37px 158px;
+    transition: all 0.2s ease-in-out;
+}
+.ShopImg2:hover{
+    transform: rotate(90deg);
+ }
+.Shoptext2{
+    margin: -120px 0px 0 256px;
+    padding: 2px 2px;
+    display: block;
+    text-align: start;
+    color: gray;
+    font-size: 1.5rem;
+    
+}
+
+
+
+/* ABOUT US SECTION START FROM HERE */
+#about_us{
+    height: 500px;
+    width: 100%;
+    background: url('/pic/about/4.jpg') center center no-repeat;
+    background-size: cover;
+    border: 10px solid white;
+    
+}
+#about_us h1{
+    margin: 33px 0px 0px 762px;
+    font-size: 4rem;
+    display: block;
+    color: black;
+}
+#about_us h2{
+    margin: 33px 0px 15px 760px;
+    font-size: 2rem;
+    display: block;
+    color: gray;
+    font-family: 'Baloo 2', cursive;
+}
+#about_us h3{
+    margin: 2px 0px 0px 765px;
+    font-size: 2.5rem;
+    display: block;
+    color: #750b0b;
+    font-family: 'Great Vibes', initial;
+}
+/* All Page Headings Setting Section Is Here: */
+.mainheading{
+    
+    font-size: 3rem;
+    color: #750b0b;
+    font-family: 'Monda', sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+.subheading{
+    color: #750b0b;;
+    font-size: 1.5rem;
+    font-family: 'Great Vibes', initial;
+    /* font-family: 'Monda', sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* default section */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+/*  Navigation Bar Section */ 
+
+/* Navigation Bar Section: Menue/List */
+#navigation{
+    display: flex;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+#navigation ul{
+    display: flex;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.list{
+    margin-left: 57px;
+    padding: 2px;
+    list-style: none;
+}
+.list a{
+    text-decoration: none;
+    color: #000000e6;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.list a:hover{
+    
+    /* text-decoration: overline solid #ec0f6b; */
+    color: #ec0f6b;
+    text-decoration-thickness: 10px;
+}
+.list a:active{
+    text-decoration: overline solid #f81717;
+    
+}
+
+/*Navigation section: Cart and Search */
+#search img{
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 375px;
+}
+
+#search img:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+ #cart {
+  font-size: 35px;
+    height: 100px;
+    margin-top: 8px;
+    margin-left: 220px;
+}
+                    
+ #cart:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Section Gallary */
+/* main background gallary settings */
+
+#store{
+    height: 1405px;
+    width: 100%;
+    /* background:url('../img/background/4.jpg') center center; */
+    background-color: #f0f0f0e6;
+    background-size: cover;
+    border: 10px solid white;
+}
+#store h1{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Gallary: Cards Envelop */
+
+#cards{                 
+    display: flex;
+    flex-wrap: wrap;
+    margin: -35px 0px 0px 2px;
+}
+
+.boxcustom{
+    
+    border: 2px solid #750b0b;
+    height: 670px;
+    width: 350px;
+    display: block;
+    margin:50px 3px 54px 52px;
+    cursor: pointer;
+    position: inherit;
+}
+.boxcustom:hover{
+    box-shadow: 5px 5px 35px #750b0b;
+    background-color: white;
+    transition: all 0.1s ease 0s;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cards img{
+   
+    height: 60%;
+    width: 100%;
+    border: 10px solid white;
+}
+
+#cards h2{
+    font-size: 25px;
+    margin: 20px 0px 0px 70px;
+}
+#cards p{
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 6px;
+    text-align: center;
+}
+#cards h3{
+    margin: 8px 0px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Buy Now Button */
+
+
+.example_c {background-image: linear-gradient(to right, #ff0084 0%, #33001b  51%, #ff0084  100%)}
+.example_c {
+    margin: 10px 12px 50px 60px;
+    width: 230px;
+    height: 50px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 40px;
+    display: block;
+    text-decoration: none;
+ }
+
+ .example_c:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+
+ }
+#cards a{
+    display: block;    
+}
+
+
+
+/* All Page Headings Setting Section Is Here: */
+
+.subheading{
+    color: #750b0b;;
+    font-size: 1.5rem;
+    font-family: 'Great Vibes', initial;
+    /* font-family: 'Monda', sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.boxcustom12{
+    
+    border: 2px solid #750b0b;
+    height: 470px;
+    width: 400px;
+    display: block;
+    margin:50px 32px 54px 32px;
+    cursor: pointer;
+    margin-left: 400px;
+    text-align: center;
+    padding-left: 30px;
+}
+.cart-section{
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    background: url('/pic/background/4.jpg') center center no-repeat;
+    background-size: contain;
+}
+.boxcustom12:hover{
+    box-shadow: 5px 5px 35px #750b0b;
+    background-color: white;
+    transition: all 0.1s ease 0s;
+}
